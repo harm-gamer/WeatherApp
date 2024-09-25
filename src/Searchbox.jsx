@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 export default function Searchbox({updateInfo}){
     let [city,setcity] = useState("");
     const API_URL = "https://api.openweathermap.org/data/2.5/weather"
-const API_KEY = "2bcdf117b941d2328e3223efe2e6063b";
+    const API_KEY = "2bcdf117b941d2328e3223efe2e6063b";
 
 let getweatherInfo = async ()  =>{
   let response= await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
